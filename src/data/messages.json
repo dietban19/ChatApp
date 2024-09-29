@@ -1,0 +1,40 @@
+[
+  {
+    "msgList": [
+      {
+        "addTime": "September 29, 2024 at 11:44:53 AM UTC-6",
+        "content": "hello",
+        "type": "text",
+        "id": "WQAyXlZGLzPwYJJ2E8eWp91MYYI3"
+      },
+      {
+        "addTime": "September 29, 2024 at 11:44:53 AM UTC-6",
+        "content": "How are you bro I need Help with a question",
+        "type": "text",
+        "id": "WQAyXlZGLzPwYJJ2E8eWp91MYYI3"
+      },
+      {
+        "addTime": "September 29, 2024 at 11:44:53 AM UTC-6",
+        "content": "Sure what is it",
+        "type": "text",
+        "id": "NygVNPSw18Yx8dQeh1FQC50Xv7r2"
+      }
+    ],
+    "chatid": "1",
+    "last_time": "September 29, 2024 at 11:44:53 AM UTC-6",
+    "last_message": "Hello",
+    "from_message": "WQAyXlZGLzPwYJJ2E8eWp91MYYI3",
+    "users": [
+      {
+        "userId": "NygVNPSw18Yx8dQeh1FQC50Xv7r2",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJLbMaIopD_lA_SLCF7Uj6apF-xZFu5pKV-C9xHAGvISjTOmg=s96-c",
+        "name": "Dieter Banaag"
+      },
+      {
+        "userId": "WQAyXlZGLzPwYJJ2E8eWp91MYYI3",
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJPjjd_V-zV_e5ZEU2-hGP2IgckX5EiGeHwf5rpKYg-1ATYOw=s96-c",
+        "name": "Dieter Villa"
+      }
+    ]
+  }
+]
