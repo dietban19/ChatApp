@@ -2,7 +2,7 @@ import React from "react";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 function Searchbar() {
   return (
-    <div className="p-2">
+    <div className="mt-[4rem] p-2">
       <div className="rounded-xl gap-2 bg-chat-100 p-1 px-3 text-neutral-200 flex items-center">
         <HiMagnifyingGlass />
         <input

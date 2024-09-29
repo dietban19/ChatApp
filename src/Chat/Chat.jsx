@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import MessagesList from "./MessagesList/MessagesList";
 import MainChat from "./ChatMain/MainChat";
 import AddUser from "./MessagesList/AddUser";
+import Sidebar from "./MessagesList/Sidebar";
+import Settings from "./Sidebar/Settings";
 
 function Chat() {
   const [tab, setTab] = useState("All");
@@ -9,6 +11,7 @@ function Chat() {
   const [selectedMessage, setSelectedMessage] = useState();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [addUser, setAddUser] = useState(false);
+  const [view, setView] = useState("messages");
   // Update the isMobile state on window resize
   useEffect(() => {
     const handleResize = () => {
@@ -66,21 +69,26 @@ function Chat() {
         </>
       ) : (
         <>
+          {!isMobile && <Sidebar setView={setView} />}
           <div
             className={`${isMobile ? "w-full" : "w-[25.25rem]"} bg-chat-800  h-full flex flex-col  transform transition-transform duration-700  `}
           >
-            <MessagesList
-              tab={tab}
-              setTab={setTab}
-              selectedMessageId={selectedMessageId}
-              setSelectedMessageId={setSelectedMessageId}
-              selectedMessage={selectedMessage}
-              setSelectedMessage={setSelectedMessage}
-              setAddUser={setAddUser}
-            />
+            {view == "messages" && (
+              <MessagesList
+                tab={tab}
+                setTab={setTab}
+                selectedMessageId={selectedMessageId}
+                setSelectedMessageId={setSelectedMessageId}
+                selectedMessage={selectedMessage}
+                setSelectedMessage={setSelectedMessage}
+                setAddUser={setAddUser}
+                isMobile={isMobile}
+              />
+            )}
+            {view == "settings" && <Settings />}
           </div>
           <div
-            className={`grow bg-chat-800 h-full flex flex-col transform    w-full sm:w-auto`}
+            className={`grow bg-chat-100 h-full flex flex-col transform    w-full sm:w-auto`}
           >
             {selectedMessage && (
               <MainChat

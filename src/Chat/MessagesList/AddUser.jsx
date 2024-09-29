@@ -99,7 +99,7 @@ function AddUser({ setAddUser }) {
 
   return (
     <div className="absolute top-0 z-[9999] w-full h-full backdrop-blur-sm bg-opacity-50 bg-black flex justify-center items-center">
-      <div className="bg-[#2A2F32] w-full max-w-md p-6 rounded-lg shadow-lg">
+      <div className="mx-4 h-[30rem] bg-[#2A2F32] w-full max-w-md p-6 rounded-lg shadow-lg">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-[#E9EDEF] text-xl font-semibold">Add User</h2>
           <button
@@ -118,7 +118,7 @@ function AddUser({ setAddUser }) {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        <div className="text-[#99AAB5]">
+        <div className="text-[#99AAB5] h-[20rem] overflow-y-scroll">
           {loading ? (
             <p>Loading...</p>
           ) : users.length > 0 ? (

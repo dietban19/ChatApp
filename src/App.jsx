@@ -4,6 +4,7 @@ import { useAuth } from "./context/UserContext";
 // import MessagesList from "./components/Chat/MessagesList/MessagesList";
 // import Chat from "./components/Chat/Chat";
 import Chat from "./Chat/Chat";
+import Authentication from "./Chat/Signin/Authentication";
 function App() {
   const { googleSignIn, logout, currentUser, dbUser } = useAuth();
 
@@ -17,7 +18,12 @@ function App() {
         Logout
       </div> */}
       {/* <MessagesList /> */}
-      <Chat />
+      <Routes>
+        <Route
+          path="/chat"
+          element={currentUser ? <Chat /> : <Authentication />}
+        />
+      </Routes>
     </>
   );
 }

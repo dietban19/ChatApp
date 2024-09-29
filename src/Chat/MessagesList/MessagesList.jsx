@@ -3,6 +3,7 @@ import TopHeader from "./TopHeader";
 import Searchbar from "./Searchbar";
 import Tabs from "./Tabs";
 import List from "./List";
+import Sidebar from "./Sidebar";
 
 function MessagesList({
   tab,
@@ -12,6 +13,7 @@ function MessagesList({
   selectedMessageId,
   setSelectedMessageId,
   setAddUser,
+  isMobile,
 }) {
   return (
     <>
