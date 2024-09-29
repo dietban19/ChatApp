@@ -6,7 +6,7 @@ function Bottombar({ setView, isMobile }) {
   console.log(isMobile, "bbomt");
   return (
     <div
-      className={`text-neutral-200 flex absolute bottom-0 z-[999]  bg-chat-100 w-full items-center justify-evenly p-1 py-2`}
+      className={`text-neutral-200 flex fixed bottom-0 z-[999]  bg-chat-100 w-full items-center justify-evenly p-1 py-2`}
     >
       <IoChatbubbleOutline
         size={25}
