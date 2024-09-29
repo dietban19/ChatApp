@@ -34,7 +34,9 @@ function Chat() {
       {/* MainChat (only visible when selectedMessage is true, slides in on mobile) */}
       {isMobile ? (
         <>
-          <Bottombar isMobile={isMobile} setView={setView} />
+          {!selectedMessage && (
+            <Bottombar isMobile={isMobile} setView={setView} />
+          )}
           <div
             className={`${isMobile ? "w-full" : "w-[25.25rem]"} bg-chat-800  h-full flex flex-col absolute left-0 top-0 transform transition-transform duration-700 ${
               selectedMessage && isMobile
