@@ -19,10 +19,7 @@ function App() {
       </div> */}
       {/* <MessagesList /> */}
       <Routes>
-        <Route
-          path="/chat"
-          element={currentUser ? <Chat /> : <Authentication />}
-        />
+        <Route path="/" element={currentUser ? <Chat /> : <Authentication />} />
       </Routes>
     </>
   );
